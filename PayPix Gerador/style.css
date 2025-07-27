@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121214;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 15px;
+}
+.container {
+  background: #1f2937;
+  border-radius: 10px;
+  padding: 5px 25px;
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 0 15px #2563ebaa;
+  margin: auto;
+  flex-grow: 0.5;
+}
+h1 {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #60a5fa;
+}
+p.tipo-chave {
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+}
+button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 0 10px #2563eb;
+  margin-bottom: 20px;
+}
+button:hover {
+  background: #1e40af;
+  box-shadow: 0 0 16px #1e40af;
+}
+#qrcode {
+  margin: 0 auto;
+  background: white;
+  padding: 0;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  transition: width 0.6s ease, height 0.6s ease, padding 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#qrcode.expanded {
+  width: 250px;
+  height: 250px;
+  padding: 15px;
+}
+#pixcode {
+  margin: 20px auto 0;
+  font-family: monospace;
+  background: #475569;
+  padding: 12px 12px;
+  border-radius: 12px;
+  word-break: break-word;
+  cursor: pointer;
+  user-select: all;
+  transition: background-color 0.3s ease;
+  max-width: 380px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+#pixcode.visible {
+  opacity: 1;
+  max-height: 200px;
+}
+#pixcode:hover {
+  background: #60a5fa;
+  color: #0f172a;
+}
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  background: #1f2937;
+  border-radius: 12px 12px 0 0;
+}
+footer a {
+  margin: 0 10px;
+  color: #60a5fa;
+  text-decoration: none;
+  vertical-align: middle;
+}
+footer a img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+  transition: filter 0.3s ease;
+}
+footer a:hover img {
+  filter: brightness(0) invert(0.6);
+}
