@@ -1,4 +1,4 @@
-const payloadAleatoria = "00020101021126800014br.gov.bcb.pix01365bd3964c-554a-47f3-a192-2b66c86402ce0218Aleatorio opcional5204000053039865802BR5918EMANOEL R DA SILVA6004MAGE62070503***63046547";
+const payloadAleatoria = "SUA CHAVE PIX AQUI";
 
 let qrInstance;
 
